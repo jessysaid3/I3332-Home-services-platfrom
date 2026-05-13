@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "SC0EC86a+8M=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jessy\\OneDrive\\Desktop\\I3332_C#_HomeServicesPlatform\\I3332_C#_HomeServicesPlatform.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jessy\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\10.0.4\\microsoft.aspnetcore.app.runtime.win-x64.10.0.4.nupkg.sha512",
+    "C:\\Users\\jessy\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\10.0.4\\microsoft.windowsdesktop.app.runtime.win-x64.10.0.4.nupkg.sha512",
+    "C:\\Users\\jessy\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\10.0.4\\microsoft.netcore.app.runtime.win-x64.10.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}
