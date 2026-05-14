@@ -1,0 +1,201 @@
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: #334155;
+}
+
+/* Stepper Styles */
+.breadcrumb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.stepper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.step {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.activeStep {
+  background: #14b8a6; /* Teal color from image */
+  color: white;
+}
+
+.line {
+  width: 40px;
+  height: 2px;
+  background: #e2e8f0;
+}
+
+/* Layout */
+.mainContent {
+  display: flex;
+  gap: 30px;
+}
+
+.formSection { flex: 2; }
+.sidebar { flex: 1; }
+
+/* Cards & Inputs */
+.card, .summaryCard, .policyCard {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  margin-top: 16px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.row { display: flex; gap: 15px; }
+.col { flex: 1; }
+
+/* Buttons */
+.primaryBtn {
+  width: 100%;
+  padding: 14px;
+  background: #1b8a7d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.2s ease;
+}
+
+.primaryBtn:hover {
+  background: #157a6f;
+}
+
+.secondaryBtn {
+  flex: 1;
+  background: white;
+  border: 1px solid #e2e8f0;
+  padding: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.buttonRow {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Sidebar Specifics */
+.priceRow {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  color: #64748b;
+}
+
+.total {
+  font-size: 1.2rem;
+  color: #1b8a7d;
+  margin-top: 15px;
+}
+
+.secureNote {
+  background: rgba(27, 138, 125, 0.08);
+  color: #157a6f;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+/* Payment Options */
+.paymentOptions {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.paymentOption {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.paymentOption:hover {
+  border-color: #cbd5e1;
+  background: #f8fafc;
+}
+
+.paymentOption.selected {
+  border-color: #1b8a7d;
+  background: rgba(27, 138, 125, 0.05);
+}
+
+.paymentOption input[type="radio"] {
+  width: auto;
+  margin: 0;
+}
+
+.paymentOption span {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.helperText {
+  font-size: 13px;
+  color: #64748b;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 850px) {
+  .mainContent { flex-direction: column; }
+}
+
+.inputFull {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.newAddress{
+  display: inline-block;
+  width:fit-content;
+  margin-left : 10px;
+}

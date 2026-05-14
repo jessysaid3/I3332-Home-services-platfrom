@@ -1,0 +1,200 @@
+.pageWrapper {
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: #334155;
+}
+
+/* Hero — matches HomeServe teal brand */
+.hero {
+  background: linear-gradient(135deg, #0f766e 0%, #1b8a7d 50%, #134e4a 100%);
+  padding: 80px 20px;
+  text-align: center;
+  color: white;
+}
+
+.badge {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 15px 0;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+/* Container & Cards */
+.container {
+  max-width: 1100px;
+  margin: -40px auto 40px;
+  padding: 0 20px;
+}
+
+.serviceList {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.serviceCard {
+  background: white;
+  border-radius: 24px;
+  padding: 30px;
+  border: 2px solid transparent;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Theme Colors */
+.blueTheme { border-color: #e0f2fe; }
+.pinkTheme { border-color: #fce7f3; }
+.yellowTheme { border-color: #fef3c7; }
+.highlighted {
+  border-color: #1b8a7d;
+  box-shadow: 0 0 0 4px rgba(27, 138, 125, 0.2);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.iconBox {
+  font-size: 2rem;
+  background: #f1f5f9;
+  padding: 15px;
+  border-radius: 18px;
+}
+
+.headerText h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.popularBadge {
+  background: rgba(27, 138, 125, 0.15);
+  color: #157a6f;
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.meta {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin-top: 5px;
+}
+
+.pricing {
+  margin-left: auto;
+  text-align: right;
+}
+
+.priceTag {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #1b8a7d;
+}
+
+.priceTag span {
+  font-size: 1rem;
+  color: #64748b;
+}
+
+.description {
+  color: #64748b;
+  margin-bottom: 25px;
+}
+
+/* Features Grid */
+.featuresGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.featureItem {
+  font-size: 0.95rem;
+  color: #334155;
+}
+
+/* Buttons */
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.bookBtn {
+  background: #1b8a7d;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.bookBtn:hover {
+  background: #157a6f;
+}
+
+.browseBtn {
+  background: transparent;
+  border: 1px solid #1b8a7d;
+  color: #1b8a7d;
+  padding: 12px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.browseBtn:hover {
+  background: rgba(27, 138, 125, 0.08);
+}
+
+/* Footer Section */
+.satisfaction {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f8fafc;
+}
+
+.getStartedBtn {
+  background: #1b8a7d;
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 10px;
+  font-size: 1rem;
+  margin-top: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.getStartedBtn:hover {
+  background: #157a6f;
+}
+
+@media (max-width: 768px) {
+  .cardHeader { flex-direction: column; align-items: flex-start; }
+  .pricing { margin-left: 0; text-align: left; }
+  .featuresGrid { grid-template-columns: 1fr; }
+  .actions { flex-direction: column; }
+}

@@ -1,0 +1,134 @@
+.footer {
+  background-color: #0f172a; 
+  color: #9ca3af;
+  padding: 60px 80px 30px;
+  font-family: sans-serif; /* Added a fallback to ensure it matches the clean look */
+}
+
+.topSection {
+  display: grid;
+  /* Restored the 4-column layout to match the design */
+  grid-template-columns: 1.5fr 1fr 1fr 1.2fr; 
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+/* Logo Styling */
+.logoText {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 15px 0;
+  padding: 0;
+  color: white;
+  font-size: 24px;
+}
+
+.description {
+  line-height: 1.6;
+  max-width: 250px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 15px;
+}
+
+.socialIcons a {
+  background: #334155;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.socialIcons a:hover {
+  background-color: #2dd4bf; 
+  color: #0f172a;            
+  transform: translateY(-3px); 
+  box-shadow: 0 4px 10px rgba(45, 212, 191, 0.3);
+}
+
+.column h4 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: white;
+  font-size: 18px;
+}
+
+.column a, .column p, .column span {
+  display: block;
+  text-decoration: none;
+  color: #9ca3af;
+  margin-bottom: 12px;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.column a:hover {
+  color: #5eead4;
+}
+
+/* Contact Section */
+.contactItem {
+  display: flex;
+  align-items: center; /* Ensures the icons vertically align with the text */
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.contactIcon {
+  color: #2dd4bf;
+  flex-shrink: 0; /* Prevents icons from squishing if text wraps */
+}
+
+.highlight {
+  color: #5eead4;
+}
+
+/* Bottom Bar */
+.bottomSection {
+  border-top: 1px solid #1e293b;
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.bottomLinks {
+  display: flex;
+  gap: 20px;
+}
+
+.bottomLinks a {
+  text-decoration: none;
+  color: #9ca3af;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .topSection { 
+    grid-template-columns: 1fr 1fr; 
+  }
+  .footer { 
+    padding: 40px 40px; 
+  }
+}
+
+@media (max-width: 600px) {
+  .topSection { 
+    grid-template-columns: 1fr; 
+  }
+  .bottomSection { 
+    flex-direction: column; 
+    gap: 15px; 
+    text-align: center; 
+  }
+}

@@ -1,0 +1,629 @@
+.page {
+
+  background-color: #fff;
+
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  color: #4b5563;
+
+}
+
+
+
+/* Header — navy + brand teal (matches site) */
+
+.hero {
+
+  background: linear-gradient(160deg, #0f172a 0%, #1e293b 40%, #0f766e 100%);
+
+  color: white;
+
+  text-align: center;
+
+  padding: 60px 20px;
+
+}
+
+
+
+.hero h1 {
+
+  font-size: 48px;
+
+  font-weight: 800;
+
+  margin: 0 0 16px 0;
+
+}
+
+
+
+.hero p {
+
+  font-size: 18px;
+
+  color: #94a3b8;
+
+  max-width: 500px;
+
+  margin: 0 auto;
+
+  line-height: 1.4;
+
+}
+
+
+
+/* Filter Bar */
+
+.filterBar {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 12px 30px;
+
+  border-bottom: 1px solid #e5e7eb;
+
+  flex-wrap: wrap;
+
+}
+
+
+
+.searchContainer {
+
+  position: relative;
+
+  flex: 1;
+
+  max-width: 350px;
+
+}
+
+
+
+.searchIcon {
+
+  position: absolute;
+
+  right: 10px;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  color: #9ca3af;
+
+}
+
+
+
+.searchInput {
+
+  width: 100%;
+
+  padding: 6px 10px;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 6px;
+
+  background: #f9fafb;
+
+  font-size: 13px;
+
+}
+
+
+
+.filterGroup {
+
+  display: flex;
+
+  gap: 6px;
+
+  flex-wrap: wrap;
+
+}
+
+
+
+.filterBtn {
+
+  padding: 5px 14px;
+
+  border-radius: 16px;
+
+  border: 1px solid #e5e7eb;
+
+  background: white;
+
+  color: #64748b;
+
+  cursor: pointer;
+
+  font-size: 13px;
+
+  white-space: nowrap;
+
+}
+
+
+
+.filterBtn.active {
+
+  background-color: #1b8a7d;
+
+  color: white;
+
+  border-color: #1b8a7d;
+
+}
+
+
+
+/* Results Area */
+
+.container {
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 20px 40px;
+
+}
+
+
+
+.resultsText {
+
+  color: #94a3b8;
+
+  margin-bottom: 20px;
+
+}
+
+
+
+.grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+
+  gap: 20px;
+
+}
+
+
+
+/* Card Styles */
+
+.card {
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 12px;
+
+  padding: 24px;
+
+  background: white;
+
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+
+}
+
+
+
+.cardHeader {
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 12px;
+
+  margin-bottom: 16px;
+
+}
+
+
+
+.avatar {
+
+  width: 54px;
+
+  height: 54px;
+
+  background-color: #1b8a7d;
+
+  color: white;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-weight: bold;
+
+  font-size: 18px;
+
+}
+
+
+
+.nameInfo h3 {
+
+  margin: 0;
+
+  font-size: 18px;
+
+  color: #111827;
+
+}
+
+
+
+.titleRow {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+}
+
+
+
+.check {
+
+  font-size: 12px;
+
+  color: #1b8a7d;
+
+}
+
+
+
+.categoryBadge {
+
+  display: inline-block;
+
+  font-size: 12px;
+
+  padding: 2px 10px;
+
+  border-radius: 12px;
+
+  margin-top: 4px;
+
+}
+
+
+
+.cleaning { background: #eff6ff; color: #3b82f6; }
+
+.babysitting { background: #fff1f2; color: #e11d48; }
+
+.cooking { background: #fffbeb; color: #d97706; }
+
+
+
+.statusBadge {
+
+  margin-left: auto;
+
+  font-size: 12px;
+
+  padding: 4px 10px;
+
+  border-radius: 15px;
+
+}
+
+
+
+.available { background: #f0fdf4; color: #16a34a; }
+
+.busy { background: #f3f4f6; color: #9ca3af; }
+
+
+
+.description {
+
+  font-size: 14px;
+
+  line-height: 1.5;
+
+  color: #64748b;
+
+  margin-bottom: 20px;
+
+  height: 42px;
+
+}
+
+
+
+.metaInfo {
+
+  display: flex;
+
+  gap: 30px;
+
+  font-size: 14px;
+
+  margin-bottom: 10px;
+
+}
+
+
+
+.location {
+
+  font-size: 14px;
+
+  color: #64748b;
+
+  margin-bottom: 20px;
+
+}
+
+
+
+.cardFooter {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-top: 16px;
+
+  padding-top: 16px;
+
+  border-top: 1px solid #e5e7eb;
+
+}
+
+
+
+
+
+.price {
+
+  font-size: 22px;
+
+  font-weight: 700;
+
+  color: #1b8a7d;
+
+}
+
+
+
+.bookBtn {
+
+  background-color: #1b8a7d;
+
+  color: white;
+
+  border: none;
+
+  padding: 10px 24px;
+
+  border-radius: 8px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: background 0.2s ease;
+
+}
+
+
+
+.bookBtn:hover {
+
+  background-color: #157a6f;
+
+}
+
+
+
+.unavailableBtn {
+
+  background-color: #9caab5;
+
+  color: white;
+
+  border: none;
+
+  padding: 10px 24px;
+
+  border-radius: 8px;
+
+  opacity: 0.8;
+
+}
+
+
+
+@media (max-width: 768px) {
+
+  .filterBar {
+
+    padding: 12px 16px;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+  }
+
+
+
+  .searchContainer {
+
+    max-width: 100%;
+
+    margin-bottom: 10px;
+
+  }
+
+
+
+  .searchInput {
+
+    padding: 8px 12px;
+
+    font-size: 14px;
+
+  }
+
+
+
+  .filterGroup {
+
+    overflow-x: auto;
+
+    flex-wrap: wrap;
+
+    padding-bottom: 4px;
+
+    -webkit-overflow-scrolling: touch;
+
+    scrollbar-width: thin;
+
+  }
+
+
+
+  .filterGroup::-webkit-scrollbar {
+
+    height: 4px;
+
+  }
+
+
+
+  .filterGroup::-webkit-scrollbar-thumb {
+
+    background: #cbd5e1;
+
+    border-radius: 2px;
+
+  }
+
+
+
+  .filterBtn {
+
+    padding: 6px 12px;
+
+    font-size: 12px;
+
+    flex-shrink: 0;
+
+  }
+
+
+
+  .hero h1 {
+
+    font-size: 28px;
+
+  }
+
+
+
+  .hero p {
+
+    font-size: 14px;
+
+  }
+
+
+
+  .container {
+
+    padding: 16px;
+
+  }
+
+
+
+  .grid {
+
+    grid-template-columns: 1fr;
+
+  }
+
+}
+
+
+
+@media (max-width: 480px) {
+
+  .hero {
+
+    padding: 40px 16px;
+
+  }
+
+
+
+  .hero h1 {
+
+    font-size: 24px;
+
+  }
+
+
+
+  .filterBtn {
+
+    padding: 5px 10px;
+
+    font-size: 11px;
+
+  }
+
+
+
+  .card {
+
+    padding: 16px;
+
+  }
+
+
+
+  .cardHeader {
+
+    flex-direction: column;
+
+  }
+
+
+
+  .statusBadge {
+
+    margin-left: 0;
+
+    margin-top: 8px;
+
+  }
+
+}
