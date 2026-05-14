@@ -136,7 +136,7 @@ namespace HomeServicesPlatform.Controllers
                 _context.carts.Add(new Cart { user_id = userId, status = "active" });
                 await _context.SaveChangesAsync();
                 await transaction.CommitAsync();
-                return Ok(new { success = true });
+                return Ok(new { success = true, order_id = order.id });
             }
             catch { await transaction.RollbackAsync(); throw; }
         }
