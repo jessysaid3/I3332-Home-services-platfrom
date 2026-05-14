@@ -30,15 +30,16 @@ export default function SignUp() {
     password: "",
     confirmPassword: "",
     adminPassword: "",
-    bio: "",
-    address: {
-      country: "",
-      city: "",
-      street: "",
-      building: "",
-      floor: "",
-      apartment: ""
-    }
+    bio: ""
+  });
+
+  const [addressData, setAddressData] = useState({
+    country: "",
+    city: "",
+    street: "",
+    building: "",
+    floor: "",
+    apartment: ""
   });
 
   const [errors, setErrors] = useState({
@@ -160,6 +161,11 @@ export default function SignUp() {
     }
   };
 
+  const handleAddressChange = (e) => {
+    const { name, value } = e.target;
+    setAddressData((prev) => ({ ...prev, [name]: value }));
+  }
+
 
   const handleSubmit = async (e) => {
   e.preventDefault();
@@ -213,21 +219,21 @@ export default function SignUp() {
 
   try {
     const response = await axios.post(
-      "https://localhost:7265/api/v1/auth/signup", 
+      "http://127.0.0.1:5000/api/v1/auth/signup", 
       {
         name: formData.fullName, 
         email: formData.email,
         password: formData.password,
-        role: role === "worker" ? "provider" : "client", // ? mapping
+        role: role === "worker" ? "provider" : role, // ? mapping
         bio: formData.bio,
-        adminPassword: formData.adminPassword,
+        adminPass: formData.adminPassword,
         address: {
-            country: formData.address.country,
-            city: formData.address.city,
-            street: formData.address.street,
-            building: formData.address.building,
-            floor: Number(formData.address.floor), // ? number
-            apartment: formData.address.apartment
+            country: addressData.country,
+            city: addressData.city,
+            street: addressData.street,
+            building: addressData.building,
+            floor: Number(addressData.floor), // ? number
+            apartment: addressData.apartment
           }
         }
       );
@@ -542,32 +548,32 @@ export default function SignUp() {
             {/* ADDRESS */}
             <div className={styles.inputGroup}>
               <label>Country</label>
-              <input name="address.country" onChange={handleChange} />
+              <input name="country" onChange={handleAddressChange} required/>
             </div>
 
             <div className={styles.inputGroup}>
               <label>City</label>
-              <input name="address.city" onChange={handleChange} />
+              <input name="city" onChange={handleAddressChange}  required/>
             </div>
 
             <div className={styles.inputGroup}>
               <label>Street</label>
-              <input name="address.street" onChange={handleChange} />
+              <input name="street" onChange={handleAddressChange}  required/>
             </div>
 
             <div className={styles.inputGroup}>
               <label>Building</label>
-              <input name="address.building" onChange={handleChange} />
+              <input name="building" onChange={handleAddressChange}  required/>
             </div>
 
             <div className={styles.inputGroup}>
               <label>Floor</label>
-              <input name="address.floor" type="number" onChange={handleChange} />
+              <input name="floor" type="number" onChange={handleAddressChange} required />
             </div>
 
             <div className={styles.inputGroup}>
               <label>Apartment</label>
-              <input name="address.apartment" onChange={handleChange} />
+              <input name="apartment" onChange={handleAddressChange}  required/>
             </div>
 
             {/* TERMS AND CONDITIONS */}
