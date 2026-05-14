@@ -1,0 +1,40 @@
+.profile-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+.profile-container h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.profile-card {
+  max-width: 480px;
+  padding: 1.5rem;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 14px 32px rgba(15, 23, 42, 0.12);
+  border: 1px solid #e5e7eb;
+}
+
+.profile-card p {
+  margin: 0.2rem 0;
+}
+
+.edit-btn {
+  margin-top: 15px;
+  padding: 0.6rem 1.4rem;
+  border: none;
+  background: #1b8a7d;
+  color: white;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.edit-btn:hover {
+  background: #157a6f;
+}

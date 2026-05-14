@@ -1,0 +1,429 @@
+/* Home — marketing landing (Lovable-style: clean spacing, teal brand, soft cards) */
+
+.wrapper {
+  width: 100%;
+  color: var(--hs-foreground, #0f172a);
+}
+
+/* Hero */
+.hero {
+  min-height: clamp(28rem, 78vh, 44rem);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.heroOverlay {
+  width: 100%;
+  padding: clamp(3rem, 8vw, 5rem) 1.25rem;
+  background: linear-gradient(
+    105deg,
+    rgba(15, 23, 42, 0.82) 0%,
+    rgba(15, 23, 42, 0.55) 45%,
+    rgba(27, 138, 125, 0.35) 100%
+  );
+}
+
+.heroEyebrow {
+  margin: 0 0 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.heroTitle {
+  margin: 0;
+  font-size: clamp(1.85rem, 4.5vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+}
+
+.heroLead {
+  margin: 1.25rem auto 0;
+  max-width: 36rem;
+  font-size: clamp(0.95rem, 1.6vw, 1.05rem);
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.heroActions {
+  margin-top: 1.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.btnPrimary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.35rem;
+  border-radius: 0.625rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  color: #fff;
+  background: var(--hs-teal, #1b8a7d);
+  border: 1px solid transparent;
+  transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 14px rgba(27, 138, 125, 0.35);
+}
+
+.btnPrimary:hover {
+  background: var(--hs-teal-dark, #157a6f);
+  transform: translateY(-1px);
+}
+
+.btnSecondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.35rem;
+  border-radius: 0.625rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  color: #fff;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.btnSecondary:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: #fff;
+}
+
+.trustBadges {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  justify-content: center;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.trustBadges span::before {
+  content: "✓ ";
+  color: #5eead4;
+  font-weight: 700;
+}
+
+/* Stats */
+.statsBar {
+  background: linear-gradient(
+    90deg,
+    var(--hs-teal-dark, #157a6f) 0%,
+    var(--hs-teal, #1b8a7d) 50%,
+    #1a9d8e 100%
+  );
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding: 2.5rem clamp(1rem, 5vw, 4rem);
+  text-align: center;
+}
+
+.statItem h2 {
+  margin: 0;
+  font-size: clamp(1.65rem, 3vw, 2.25rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.statItem p {
+  margin: 0.35rem 0 0;
+  font-size: 0.9rem;
+  opacity: 0.92;
+}
+
+/* Sections */
+.section {
+  padding: clamp(3.5rem, 8vw, 5rem) clamp(1.25rem, 6vw, 5rem);
+  text-align: center;
+}
+
+.sectionMuted {
+  background: var(--hs-muted-bg, #f8fafc);
+}
+
+.subtitle {
+  display: block;
+  color: var(--hs-teal, #1b8a7d);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+}
+
+.sectionTitle {
+  margin: 0.5rem 0 0;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--hs-foreground, #0f172a);
+}
+
+.sectionDesc {
+  margin: 0.75rem auto 2.5rem;
+  max-width: 32rem;
+  color: var(--hs-muted, #64748b);
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+/* Service cards */
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  text-align: left;
+}
+
+.serviceCard {
+  padding: 1.75rem;
+  border-radius: 1rem;
+  background: #fff;
+  border: 1px solid var(--hs-border, #e2e8f0);
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.2s ease;
+}
+
+.serviceCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+  border-color: rgba(27, 138, 125, 0.25);
+}
+
+.serviceIcon {
+  font-size: 2.25rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.serviceCard h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.serviceCard p {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--hs-muted, #64748b);
+}
+
+.price {
+  display: block;
+  margin: 1.25rem 0 1rem;
+  font-weight: 700;
+  color: var(--hs-teal, #1b8a7d);
+  font-size: 0.95rem;
+}
+
+.bookBtn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 0.65rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #fff;
+  background: var(--hs-teal, #1b8a7d);
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease;
+  box-sizing: border-box;
+}
+
+.bookBtn:hover {
+  background: var(--hs-teal-dark, #157a6f);
+  transform: scale(1.01);
+}
+
+/* How it works */
+.processGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.75rem;
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.processStep h4 {
+  margin: 0.75rem 0 0.35rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.processStep p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--hs-muted, #64748b);
+  line-height: 1.5;
+}
+
+.stepIcon {
+  width: 3rem;
+  height: 3rem;
+  margin: 0 auto;
+  border-radius: 999px;
+  background: var(--hs-teal-soft, rgba(27, 138, 125, 0.12));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.stepNum {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--hs-teal, #1b8a7d);
+}
+
+/* Features */
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.featureItem {
+  text-align: center;
+}
+
+.featureIcon {
+  font-size: 1.75rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  margin: 0 auto 1rem;
+  border-radius: 0.75rem;
+  background: var(--hs-teal-soft, rgba(27, 138, 125, 0.12));
+}
+
+.featureItem h4 {
+  margin: 0 0 0.4rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.featureItem p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--hs-muted, #64748b);
+  line-height: 1.55;
+}
+
+/* Bottom CTA */
+.ctaBand {
+  padding: clamp(3rem, 7vw, 4.5rem) 1.25rem;
+  background: linear-gradient(
+    135deg,
+    var(--hs-teal, #1b8a7d) 0%,
+    #0f766e 55%,
+    #0d5c56 100%
+  );
+  color: #fff;
+  text-align: center;
+}
+
+.ctaInner {
+  max-width: 36rem;
+  margin: 0 auto;
+}
+
+.ctaTitle {
+  margin: 0;
+  font-size: clamp(1.35rem, 3vw, 1.75rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.ctaText {
+  margin: 0.75rem 0 0;
+  font-size: 1rem;
+  opacity: 0.92;
+  line-height: 1.55;
+}
+
+.ctaActions {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.btnPrimaryLight {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 1.35rem;
+  border-radius: 0.625rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  color: var(--hs-teal, #1b8a7d);
+  background: #fff;
+  border: none;
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+.btnPrimaryLight:hover {
+  transform: translateY(-1px);
+}
+
+.btnGhost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 1.35rem;
+  border-radius: 0.625rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  color: #fff;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  transition: background 0.2s ease;
+}
+
+.btnGhost:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+@media (max-width: 768px) {
+  .statsBar {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem 1.25rem;
+  }
+
+  .hero {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .statsBar {
+    grid-template-columns: 1fr;
+  }
+}
