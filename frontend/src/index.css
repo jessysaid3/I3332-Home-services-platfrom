@@ -1,0 +1,31 @@
+/* Global design tokens — align with HomeServe / modern product UI */
+:root {
+  --hs-teal: #1b8a7d;
+  --hs-teal-dark: #157a6f;
+  --hs-teal-soft: rgba(27, 138, 125, 0.12);
+  --hs-foreground: #0f172a;
+  --hs-muted: #64748b;
+  --hs-background: #ffffff;
+  --hs-muted-bg: #f8fafc;
+  --hs-border: #e2e8f0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--hs-foreground);
+  background: var(--hs-background);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}

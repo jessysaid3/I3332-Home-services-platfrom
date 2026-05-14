@@ -1,0 +1,364 @@
+.page {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.header h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.header p {
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+.chip {
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  background: #ecfdf5;
+  color: #16a34a;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.8rem;
+}
+
+.statCard {
+  border-radius: 16px;
+  padding: 1rem 1.2rem;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.statLabel {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #6b7280;
+}
+
+.statValue {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.statHint {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1.4fr;
+  gap: 1.5rem;
+}
+
+.card {
+  border-radius: 18px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
+  padding: 1rem 1.1rem 1.1rem;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.85rem;
+}
+
+.cardHeader h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.requestList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.requestItem {
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  padding: 0.75rem 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.requestMain {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.requestMain h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.clientName {
+  font-size: 0.85rem;
+  color: #4b5563;
+}
+
+.meta {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.badgeRow {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.35rem;
+}
+
+.statusNew,
+.statusConfirmed {
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.statusNew {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.statusConfirmed {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.statusRejected {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.statusInactive {
+  background: #f3f4f6;
+  color: #4b5563;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.price {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.primaryBtn,
+.secondaryBtn {
+  border-radius: 999px;
+  padding: 0.35rem 0.9rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.primaryBtn {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: #ffffff;
+}
+
+.secondaryBtn {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.dangerBtn {
+  border-radius: 999px;
+  padding: 0.35rem 0.9rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.helperText {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-bottom: 0.75rem;
+}
+
+.availabilityGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.6rem;
+}
+
+.dayBlock {
+  border-radius: 12px;
+  border: 1px dashed #e5e7eb;
+  padding: 0.55rem 0.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.dayLabel {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.slot {
+  font-size: 0.8rem;
+  color: #16a34a;
+}
+
+.slotMuted {
+  font-size: 0.78rem;
+  color: #9ca3af;
+}
+
+.fullWidthCard {
+  grid-column: 1 / -1;
+}
+
+.badge {
+  background: #eef2ff;
+  color: #4338ca;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 0.2rem 0.65rem;
+}
+
+.errorText {
+  color: #b91c1c;
+  font-size: 0.85rem;
+  margin-bottom: 0.75rem;
+}
+
+.offeringForm {
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 0.9rem;
+  margin-bottom: 1rem;
+  background: #fafafa;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.formField span {
+  font-size: 0.78rem;
+  color: #4b5563;
+  font-weight: 600;
+}
+
+.formField input,
+.formField select {
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  padding: 0.45rem 0.55rem;
+  font-size: 0.88rem;
+}
+
+.formField input:focus,
+.formField select:focus {
+  outline: none;
+  border-color: #22c55e;
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.12);
+}
+
+@media (max-width: 960px) {
+  .statsGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .availabilityGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .formGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .availabilityGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .actions {
+    flex-wrap: wrap;
+  }
+
+  .formField input,
+  .formField select {
+    padding: 0.35rem 0.45rem;
+    font-size: 0.8rem;
+  }
+
+  .formField span {
+    font-size: 0.72rem;
+  }
+}

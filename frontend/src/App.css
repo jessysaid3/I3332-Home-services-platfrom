@@ -1,0 +1,11 @@
+/* App shell: full-height column so footer sits at bottom (Lovable-style layout) */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  width: 100%;
+}

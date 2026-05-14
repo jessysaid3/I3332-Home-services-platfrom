@@ -1,0 +1,190 @@
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  color: #334155;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.layout {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.list {
+  flex: 2;
+}
+
+.summary {
+  flex: 1;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+  position: sticky;
+  top: 90px;
+}
+
+.card,
+.emptyCard {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.cardTop {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.cardActions {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.provider {
+  color: #64748b;
+  margin-top: 6px;
+}
+
+.metaGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px 14px;
+}
+
+.lineTotal {
+  margin-top: 12px;
+  font-weight: 700;
+  color: #1b8a7d;
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  color: #64748b;
+}
+
+.total {
+  font-weight: 700;
+  color: #1b8a7d;
+  font-size: 1.05rem;
+}
+
+.primaryBtn {
+  width: 100%;
+  margin-top: 16px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #1b8a7d;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.primaryBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.removeBtn,
+.editBtn,
+.backBtn {
+  border: 1px solid #e2e8f0;
+  background: #fff;
+  color: #334155;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.removeBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.editBox {
+  margin-bottom: 12px;
+  padding: 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #f8fafc;
+}
+
+.editBox label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.editBox input {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.editActions {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.saveBtn,
+.cancelBtn {
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+  border: 1px solid #e2e8f0;
+}
+
+.saveBtn {
+  background: #1b8a7d;
+  color: #fff;
+  border-color: #1b8a7d;
+}
+
+.saveBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.cancelBtn {
+  background: #fff;
+  color: #334155;
+}
+
+.error {
+  color: #b91c1c;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 860px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .summary {
+    width: 100%;
+    position: static;
+  }
+
+  .metaGrid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,26 @@
+.wrap {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 3rem 1.25rem 4rem;
+  color: var(--hs-foreground, #0f172a);
+  line-height: 1.65;
+}
+
+.wrap h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0 0 1rem;
+  letter-spacing: -0.02em;
+}
+
+.wrap h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 1.75rem 0 0.5rem;
+}
+
+.wrap p {
+  margin: 0 0 1rem;
+  color: var(--hs-muted, #64748b);
+  font-size: 0.95rem;
+}
