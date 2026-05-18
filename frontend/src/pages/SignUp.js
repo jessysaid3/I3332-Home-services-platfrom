@@ -219,7 +219,7 @@ export default function SignUp() {
 
   try {
     const response = await axios.post(
-      "https://localhost:7265/api/v1/auth/signup", 
+      "http://localhost:5185/api/v1/auth/signup", 
       {
         name: formData.fullName, 
         email: formData.email,

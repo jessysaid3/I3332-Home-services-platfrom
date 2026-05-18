@@ -19,7 +19,7 @@ const Services = () => {
   useEffect(() => {
     const fetchServices = async () => {
       try {
-        const res = await axios.get("https://localhost:7265/api/v1/services");
+        const res = await axios.get("http://localhost:5185/api/v1/services");
 
         console.log("SERVICES:", res.data);
 
